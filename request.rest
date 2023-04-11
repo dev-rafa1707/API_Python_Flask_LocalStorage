@@ -1,0 +1,32 @@
+
+// Get All Cars
+GET http://localhost:5000/cars
+ 
+###
+
+// Create Car
+POST http://localhost:5000/cars
+Content-Type: application/json
+
+{
+  "id":4,
+  "brand":"KIA",
+  "model":"Sportage",
+  "year":2010
+}
+
+###
+
+// Update a Car
+PUT http://localhost:5000/cars/2
+Content-Type: application/json
+
+{
+  "id":"2",
+  "brand":"Mitsubishi",
+  "model":"ASX 4x4",
+  "year":2015
+}
+
+###
+
