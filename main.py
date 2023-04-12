@@ -15,7 +15,7 @@ def get_cars():
     )
 
 #Get by id
-@app.route('/cars/<int:id>')
+@app.route('/cars/<int:id>', methods=['GET'])
 def get_car(id):
     for car in Cars:
         if car['id'] == id:
@@ -45,7 +45,13 @@ def update_car(id):
             return car
 
 
-
+#Delete
+@app.route('/cars/<int:id>', methods=['DELETE'])
+def delete_car(id):
+    for car in Cars:
+        if car['id']== id:
+            del(car)
+            return "OK"
 
 
 
