@@ -19,7 +19,10 @@ def get_cars():
 def get_car(id):
     for car in Cars:
         if car['id'] == id:
-            return car
+            return make_response(
+                jsonify(message='Car',
+                        data=car)
+            )
 
 
 # Create
@@ -41,8 +44,16 @@ def update_car(id):
     for car in Cars:
         print(car['id'])
         if car['id'] == id:
-            car = new_car
-            return car
+            # car = new_car
+            car['id'] = new_car['id']
+            car['brand'] = new_car['brand']
+            car['model'] = new_car['model']
+            car['year'] = new_car['year']
+            return make_response(
+                jsonify(message='Successful updated',
+                        data=car   
+                )
+            )
 
 
 #Delete
@@ -50,12 +61,16 @@ def update_car(id):
 def delete_car(id):
     for car in Cars:
         if car['id']== id:
-            del(car)
-            return "OK"
-
-
-
-
+            # del(car)
+            del car['id']
+            del car['brand']
+            del car['model']
+            del car['year']
+            return  make_response(
+                jsonify(message='OK',
+                data=''
+                )
+            )
 
 
 

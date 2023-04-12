@@ -30,15 +30,15 @@ PUT http://localhost:5000/cars/2
 Content-Type: application/json
 
 {
-  "id":1,
-  "brand":"Jeep Compass",
-  "model":"Limites 4x4",
+  "id":2,
+  "brand":"Mitsubishi",
+  "model":"ASX 4x4",
   "year":2022
 }
 
 ###
 
 // Delete by id
-DELETE http://localhost:5000/cars/1
+DELETE http://localhost:5000/cars/3
  
 ###
