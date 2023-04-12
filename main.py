@@ -1,5 +1,6 @@
 from flask import Flask, make_response, jsonify, request
 from bd import Cars
+import json
 
 
 app = Flask(__name__)
@@ -29,9 +30,10 @@ def create_car():
 def update_car(id):
     new_car = request.json
     for car in Cars:
-        if car.id == id:
+        print(car['id'])
+        if car['id'] == id:
             car = new_car
-        return car
+            return car
 
 
 

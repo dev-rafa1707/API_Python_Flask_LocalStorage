@@ -22,10 +22,10 @@ PUT http://localhost:5000/cars/2
 Content-Type: application/json
 
 {
-  "id":"2",
+  "id":2,
   "brand":"Mitsubishi",
-  "model":"ASX 4x4",
-  "year":2015
+  "model":"ASX 4x4 HPE",
+  "year":2022
 }
 
 ###
