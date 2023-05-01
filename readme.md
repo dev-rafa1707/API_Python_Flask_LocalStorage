@@ -1,21 +1,29 @@
 # API Python Flask basic
+Essa API foi projetada para testar as operações de CRUD utilizando o Framework Flask
 
-Essa API foi projetada para ficar apenas no nível local e desenvolver as operações
 
+
+### Status do Projeto:
+Finalizado
+
+
+### Features
+
+
+Para as últimas (Update e Delete precisa ainda ser desenvolvido) a funcionalidade de buscar por ID
 GETALL
 GET BY ID
 CREATE
 UPDATE
 DELETE
 
-### Status do Projeto:
-Fianlizado
+
+### Pré-requisitos 
+1. Python
+2. Flask
 
 
-
-
-Para as últimas (Update e Delete precisa ainda ser desenvolvido) a funcionalidade de buscar por ID
-
+### How to run the application
 
 1. criar ambiente virtual
 python -m venv venv
