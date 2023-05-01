@@ -3,9 +3,16 @@
 Essa API foi projetada para ficar apenas no nível local e desenvolver as operações
 
 GETALL
+GET BY ID
 CREATE
 UPDATE
 DELETE
+
+### Status do Projeto:
+Fianlizado
+
+
+
 
 Para as últimas (Update e Delete precisa ainda ser desenvolvido) a funcionalidade de buscar por ID
 
