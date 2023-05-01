@@ -8,9 +8,6 @@ Finalizado
 
 
 ### Features
-
-
-Para as últimas (Update e Delete precisa ainda ser desenvolvido) a funcionalidade de buscar por ID
 GETALL
 GET BY ID
 CREATE
@@ -32,13 +29,55 @@ venv/Scripts/activate.bat (windows)
 3. Instalar o flask
 pip install flask
 
-bd.py as a local database
+
+### How to test the project
+* Use bd.py as your local database
 
 From Flask
 make_response,
 
 jsonify
 
-request
+* We are useing request.rest that is a VSCode extension to test the routes, but you can use Postman or any other tool fot that purpose.
 
-novo teste
+* Get All Cars
+GET http://localhost:5000/cars
+ 
+* Get by id
+GET http://localhost:5000/cars/2
+ 
+* Create Car
+POST http://localhost:5000/cars
+Content-Type: application/json
+
+{
+  "id":4,
+  "brand":"KIA",
+  "model":"Sportage",
+  "year":2010
+}
+
+* Update a Car
+PUT http://localhost:5000/cars/2
+Content-Type: application/json
+
+{
+  "id":2,
+  "brand":"Mitsubishi",
+  "model":"ASX 4x4",
+  "year":2022
+}
+
+* Delete by id
+DELETE http://localhost:5000/cars/2
+
+
+
+### Author
+dev-rafa1707
+<rafa1707@gmail.com>
+
+
+
+### License
+No license required
