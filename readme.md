@@ -22,13 +22,15 @@ DELETE
 
 ### How to run the application
 
-1. criar ambiente virtual
+1. Download this project from Github repository
+<https://github.com/dev-rafa1707/API_Python_Flask_LocalStorage.git>
+2. Inside the folder, use this comand to create virtual environment
 python -m venv venv
-2. ativar ambiente virtual
+3. To activate virtual environment
 venv/Scripts/activate.bat (windows)
-3. Instalar o flask
+4. Install Flask
 pip install flask
-
+5. Run main.py to run the program
 
 ### How to test the project
 * Use bd.py as your local database
@@ -38,7 +40,7 @@ make_response,
 
 jsonify
 
-* We are useing request.rest that is a VSCode extension to test the routes, but you can use Postman or any other tool fot that purpose.
+* We are using request.rest that is a VSCode extension to test the routes, but you can use Postman or any other tool for that purpose.
 
 * Get All Cars
 GET http://localhost:5000/cars
