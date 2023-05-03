@@ -35,11 +35,6 @@ pip install flask
 ### How to test the project
 * Use bd.py as your local database
 
-From Flask
-make_response,
-
-jsonify
-
 * We are using request.rest that is a VSCode extension to test the routes, but you can use Postman or any other tool for that purpose.
 
 * Get All Cars
