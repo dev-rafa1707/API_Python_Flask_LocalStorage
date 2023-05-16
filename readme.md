@@ -8,11 +8,17 @@ Finalizado
 
 
 ### Features
-GETALL
-GET BY ID
-CREATE
-UPDATE
-DELETE
+#### CRUD main operations
+* GETALL
+* GET BY ID
+* CREATE
+* UPDATE
+* DELETE
+
+#### Flask tools
+* Flask makes response is defined as a utility function that enables users to add additional HTTP headers to the response within the view's code.
+
+* jsonify is a function in Flask's flask.json module. jsonify serializes data to JavaScript Object Notation (JSON) format, wraps it in a Response object with the application/json mimetype.
 
 
 ### Pré-requisitos 
