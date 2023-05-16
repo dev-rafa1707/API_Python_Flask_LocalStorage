@@ -24,13 +24,18 @@ DELETE
 
 1. Download this project from Github repository
 <https://github.com/dev-rafa1707/API_Python_Flask_LocalStorage.git>
+
 2. Inside the folder, use this comand to create virtual environment
 python -m venv venv
+
 3. To activate virtual environment
 venv/Scripts/activate.bat (windows)
+
 4. Install Flask
 pip install flask
+
 5. Run main.py to run the program
+
 
 ### How to test the project
 * Use bd.py as your local database
